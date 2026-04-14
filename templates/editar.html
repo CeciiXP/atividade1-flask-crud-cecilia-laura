@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <title>Editar</title>
+</head>
+<body>
+<form method="POST" action="/atualizar/{{ evento.id }}">
+    <h2>Editar Evento</h2>
+    Nome: <input type="text" name="nome" value="{{ evento.nome }}">
+
+    Data: <input type="date" name="data" value="{{ evento.data }}">
+
+    Local: <input type="text" name="local" value="{{ evento.local }}">
+
+    Descrição: <textarea name="descricao">{{ evento.descricao }}</textarea>
+
+    Organizador: <input type="text" name="organizador" value="{{ evento.organizador }}">
+
+    <button type="submit">Atualizar</button>
+</form>
+</body>
+</html>
