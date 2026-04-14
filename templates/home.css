@@ -3,11 +3,17 @@ form {
     flex-direction: column; 
     width: 300px; 
     margin: 0 auto; 
+    border: 1px solid #000000; 
+    padding: 20px; 
+    border-radius: 8px; 
+    font: 300 20px/1.5 "IBM Plex Serif", serif;
 }
 
-title {
+h1 {
     text-align: center; 
     margin-bottom: 20px;
+    color: #111658;
+    font: 800 30px/1.5 "IBM Plex Serif", serif;
 }
 
 ul {
@@ -20,4 +26,32 @@ ul {
 h2 {
     text-align: center; 
     margin-bottom: 20px;
+    color: #111658;
+    font: 800 30px/1.5 "IBM Plex Serif", serif;
+}
+
+#input { 
+    background-color: #111658; 
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    padding: 10px; 
+    cursor: pointer; 
+    margin-top: 10px;
+    font: 300 20px/1.5 "IBM Plex Serif", serif; 
+}
+
+button {
+    background-color: #111658; 
+    color: white; 
+    border: none;
+    border-radius: 8px; 
+    padding: 10px; 
+    cursor: pointer; 
+    margin-top: 10px;
+    font: 300 20px/1.5 "IBM Plex Serif", serif;
+}
+.container {
+  display: flex;
+  gap: 900px;
 }
