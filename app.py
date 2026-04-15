@@ -11,7 +11,7 @@ def cadastrar():
     nome = request.form["nome"]
     data = request.form["data"]
     local = request.form["local"]
-    desc = request.form["desc"]
+    desc = request.form["descricao"]
     evento = {
         "id": len(eventos),
         "nome": nome,
@@ -20,5 +20,13 @@ def cadastrar():
         "desc": desc
     }
 
+@app.route("/editar/<int:id>")
+def editar(id):
+    evento = eventos[id]
+    return render_template("editar.html", evento=evento)
+
     eventos.append(evento)
     return redirect("/")
+
+if __name__ == "__main__":
+    app.run(debug=True)
